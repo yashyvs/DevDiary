@@ -21,14 +21,14 @@ const Navbar = () => {
 
   return (
     <div className="flex bg-yellow-500 items-center justify-between px-6 md:px-[200px] py-4">
-      <h1 className="text-lg md:text-xl font-extrabold">
+      <h1 className="text-lg md:text-xl font-bold">
         <Link to="/">DevDiary</Link>
       </h1>
       {path === "/" && (
         <div className="flex justify-center items-center space-x-0">
           <input
             onChange={(e) => setPrompt(e.target.value)}
-            className="rounded-md outline-none px-3 h-8"
+            className="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring focus:ring-yellow-100 focus:outline-none"
             placeholder="Search a post"
             type="text"
           />

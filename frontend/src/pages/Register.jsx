@@ -32,7 +32,7 @@ const Register = () => {
   return (
     <>
       <div className="flex items-center justify-between px-6 md:px-[200px] py-4 bg-yellow-500">
-        <h1 className="text-lg md:text-xl font-extrabold">
+        <h1 className="text-lg md:text-xl font-bold">
           <Link to="/">DevDiary</Link>
         </h1>
         <h3>
@@ -44,19 +44,19 @@ const Register = () => {
           <h1 className="text-xl font-bold text-left">Create an account</h1>
           <input
             onChange={(e) => setUsername(e.target.value)}
-            className="w-full px-4 py-2 rounded-lg border-2 border-yellow-400 outline-0"
+            className="w-full px-4 py-2 rounded-lg border-2 border-yellow-400 focus:ring focus:ring-yellow-200 outline-0"
             type="text"
             placeholder="Enter your username"
           />
           <input
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-2 rounded-lg border-2 border-yellow-400 outline-0"
+            className="w-full px-4 py-2 rounded-lg border-2 border-yellow-400 focus:ring focus:ring-yellow-200 outline-0"
             type="text"
             placeholder="Enter your email"
           />
           <input
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full px-4 py-2 rounded-lg border-2 border-yellow-400 outline-0"
+            className="w-full px-4 py-2 rounded-lg border-2 border-yellow-400 focus:ring focus:ring-yellow-200 outline-0"
             type="password"
             placeholder="Enter your password"
           />
